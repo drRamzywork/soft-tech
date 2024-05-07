@@ -22,12 +22,13 @@ export default function ProductSection() {
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Let{"'"}s talk product</h2>
+
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
+            Soft-tech Information Systems Technology is a regular entity that
+            aims to manufacture special technical products that contribute to
+            providing practical solutions for specific groups through creative
+            and specialized work teams, in addition to providing distinguished
+            and elaborate technical services to customers around the world.
           </h5>
         </GridItem>
       </GridContainer>
@@ -42,6 +43,7 @@ export default function ProductSection() {
               vertical
             />
           </GridItem>
+
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Verified Users"
@@ -51,6 +53,7 @@ export default function ProductSection() {
               vertical
             />
           </GridItem>
+
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Fingerprint"
