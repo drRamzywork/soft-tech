@@ -3,9 +3,10 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-import Chat from "@material-ui/icons/Chat";
-import VerifiedUser from "@material-ui/icons/VerifiedUser";
-import Fingerprint from "@material-ui/icons/Fingerprint";
+// import InfoIcon from "@material-ui/icons-material/Info";
+import InfoIcon from "@material-ui/icons/Info";
+import RemoveRedEyeIcon from "@material-ui/icons/RemoveRedEye";
+import ChecklistIcon from "@material-ui/icons/CheckCircle";
 // core components
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
@@ -36,9 +37,10 @@ export default function ProductSection() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Free Chat"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Chat}
+              title="About us"
+              description="Soft-tech is an integrated entity of specialists and pioneers of software solutions, information technology systems .and digital marketing in the Arab world.
+               We work as one to provide distinguished services that suit our customers around the world."
+              icon={InfoIcon}
               iconColor="info"
               vertical
             />
@@ -46,20 +48,20 @@ export default function ProductSection() {
 
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Verified Users"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={VerifiedUser}
-              iconColor="success"
+              title="Our Mission"
+              description="Providing service to our customers as it should be, through: Paying attention to the smallest details that make the difference and distinguishing us from others, and keeping abreast of everything new in the world of technology in order to achieve our aspirations and goals. "
+              icon={ChecklistIcon}
+              iconColor="danger"
               vertical
             />
           </GridItem>
 
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Fingerprint"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Fingerprint}
-              iconColor="danger"
+              title="Our Vision"
+              description="Achieving leadership and excellence in our services provided, on the Arab and international levels."
+              icon={RemoveRedEyeIcon}
+              iconColor="success"
               vertical
             />
           </GridItem>

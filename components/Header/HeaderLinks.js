@@ -37,11 +37,11 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={TranslateIcon}
           dropdownList={[
-            <Link href="/">
+            <Link href="/en">
               <a className={classes.dropdownLink}>AR</a>
             </Link>,
 
-            <Link href="/">
+            <Link href="/ar">
               <a className={classes.dropdownLink}>EN</a>
             </Link>,
           ]}
