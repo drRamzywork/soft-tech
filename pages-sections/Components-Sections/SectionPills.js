@@ -13,170 +13,54 @@ import GridItem from "/components/Grid/GridItem.js";
 import NavPills from "/components/NavPills/NavPills.js";
 
 import styles from "/styles/jss/nextjs-material-kit/pages/componentsSections/pillsStyle.js";
+import SectionCarousel from "./SectionCarousel";
+import StoreIcon from "@material-ui/icons/Store";
+import CodeIcon from "@material-ui/icons/Code";
+import MobileFriendlyIcon from "@material-ui/icons/MobileFriendly";
 
 const useStyles = makeStyles(styles);
 
 export default function SectionPills() {
   const classes = useStyles();
+  console.log(classes, "classes");
   return (
     <div className={classes.section}>
       <div className={classes.container}>
         <div id="navigation-pills">
-          <div className={classes.title}>
-            <h3>Navigation Pills</h3>
-          </div>
-          <div className={classes.title}>
-            <h3>
-              <small>With Icons</small>
-            </h3>
-          </div>
+          <GridItem xs={12} sm={12} md={8}>
+            <h2 className={classes.title}>Our Projects</h2>
+          </GridItem>
+
           <GridContainer>
-            <GridItem xs={12} sm={12} md={8} lg={6}>
+            <GridItem xs={12} sm={12} md={12} lg={12}>
               <NavPills
                 color="primary"
                 tabs={[
                   {
-                    tabButton: "Dashboard",
-                    tabIcon: Dashboard,
-                    tabContent: (
-                      <span>
-                        <p>
-                          Collaboratively administrate empowered markets via
-                          plug-and-play networks. Dynamically procrastinate B2C
-                          users after installed base benefits.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
-                      </span>
-                    )
+                    tabButton: "E-Marketing",
+                    tabIcon: StoreIcon,
+                    tabContent: <SectionCarousel />,
                   },
                   {
-                    tabButton: "Schedule",
-                    tabIcon: Schedule,
-                    tabContent: (
-                      <span>
-                        <p>
-                          Efficiently unleash cross-media information without
-                          cross-media value. Quickly maximize timely
-                          deliverables for real-time schemas.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically maintain clicks-and-mortar solutions
-                          without functional solutions. Dramatically visualize
-                          customer directed convergence without revolutionary
-                          ROI. Collaboratively administrate empowered markets
-                          via plug-and-play networks. Dynamically procrastinate
-                          B2C users after installed base benefits.
-                        </p>
-                      </span>
-                    )
+                    tabButton: "Web programming",
+                    tabIcon: CodeIcon,
+                    tabContent: <SectionCarousel />,
                   },
                   {
-                    tabButton: "Tasks",
+                    tabButton: "Content Management",
                     tabIcon: List,
-                    tabContent: (
-                      <span>
-                        <p>
-                          Collaboratively administrate empowered markets via
-                          plug-and-play networks. Dynamically procrastinate B2C
-                          users after installed base benefits.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
-                      </span>
-                    )
-                  }
-                ]}
-              />
-            </GridItem>
-            <GridItem xs={12} sm={12} md={12} lg={6}>
-              <NavPills
-                color="rose"
-                horizontal={{
-                  tabsGrid: { xs: 12, sm: 4, md: 4 },
-                  contentGrid: { xs: 12, sm: 8, md: 8 }
-                }}
-                tabs={[
-                  {
-                    tabButton: "Dashboard",
-                    tabIcon: Dashboard,
-                    tabContent: (
-                      <span>
-                        <p>
-                          Collaboratively administrate empowered markets via
-                          plug-and-play networks. Dynamically procrastinate B2C
-                          users after installed base benefits.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
-                      </span>
-                    )
+                    tabContent: <SectionCarousel />,
                   },
                   {
-                    tabButton: "Schedule",
-                    tabIcon: Schedule,
-                    tabContent: (
-                      <span>
-                        <p>
-                          Efficiently unleash cross-media information without
-                          cross-media value. Quickly maximize timely
-                          deliverables for real-time schemas.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically maintain clicks-and-mortar solutions
-                          without functional solutions. Dramatically visualize
-                          customer directed convergence without revolutionary
-                          ROI. Collaboratively administrate empowered markets
-                          via plug-and-play networks. Dynamically procrastinate
-                          B2C users after installed base benefits.
-                        </p>
-                      </span>
-                    )
-                  }
+                    tabButton: "Mobile applications",
+                    tabIcon: MobileFriendlyIcon,
+                    tabContent: <SectionCarousel />,
+                  },
+                  {
+                    tabButton: "Artificial Intelligencet",
+                    tabIcon: MobileFriendlyIcon,
+                    tabContent: <SectionCarousel />,
+                  },
                 ]}
               />
             </GridItem>

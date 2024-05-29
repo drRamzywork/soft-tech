@@ -5,7 +5,7 @@ import {
   infoColor,
   successColor,
   warningColor,
-  dangerColor
+  dangerColor,
 } from "/styles/jss/nextjs-material-kit.js";
 
 const navPillsStyle = (theme) => ({
@@ -20,22 +20,28 @@ const navPillsStyle = (theme) => ({
     fontWeight: "500",
     position: "relative",
     display: "block",
-    color: "inherit"
+    color: "inherit",
   },
   flexContainer: {
-    [theme.breakpoints.down("xs")]: {
+    [theme.breakpoints.down("md")]: {
       display: "flex",
-      flexWrap: "wrap"
-    }
+      flexWrap: "wrap",
+    },
+    [theme.breakpoints.down("sm")]: {
+      display: "flex",
+      flexWrap: "wrap",
+      alignItems: "center",
+      justifyContent: "center",
+    },
   },
   displayNone: {
-    display: "none !important"
+    display: "none !important",
   },
   fixed: {
-    overflow: "visible !important"
+    overflow: "visible !important",
   },
   horizontalDisplay: {
-    display: "block"
+    display: "block",
   },
   pills: {
     float: "left",
@@ -50,10 +56,10 @@ const navPillsStyle = (theme) => ({
     height: "auto",
     opacity: "1",
     maxWidth: "100%",
-    margin: "0 5px"
+    margin: "0 5px",
   },
   pillsWithIcons: {
-    borderRadius: "4px"
+    borderRadius: "4px",
   },
   tabIcon: {
     width: "30px",
@@ -61,18 +67,19 @@ const navPillsStyle = (theme) => ({
     display: "block",
     margin: "15px 0 !important",
     "&, & *": {
-      letterSpacing: "normal !important"
-    }
+      letterSpacing: "normal !important",
+    },
   },
+
   horizontalPills: {
     width: "100%",
     float: "none !important",
     "& + button": {
-      margin: "10px 0"
-    }
+      margin: "10px 0",
+    },
   },
   contentWrapper: {
-    marginTop: "20px"
+    marginTop: "20px",
   },
   primary: {
     "&,&:hover": {
@@ -81,8 +88,8 @@ const navPillsStyle = (theme) => ({
       boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px ${hexToRGBAlpha(
         primaryColor,
         0.4
-      )}`
-    }
+      )}`,
+    },
   },
   info: {
     "&,&:hover": {
@@ -91,8 +98,8 @@ const navPillsStyle = (theme) => ({
       boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px ${hexToRGBAlpha(
         infoColor,
         0.4
-      )}`
-    }
+      )}`,
+    },
   },
   success: {
     "&,&:hover": {
@@ -104,8 +111,8 @@ const navPillsStyle = (theme) => ({
       )}, 0 3px 1px -2px ${hexToRGBAlpha(
         successColor,
         0.2
-      )}, 0 1px 5px 0 ${hexToRGBAlpha(successColor, 0.12)}`
-    }
+      )}, 0 1px 5px 0 ${hexToRGBAlpha(successColor, 0.12)}`,
+    },
   },
   warning: {
     "&,&:hover": {
@@ -114,8 +121,8 @@ const navPillsStyle = (theme) => ({
       boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px ${hexToRGBAlpha(
         warningColor,
         0.4
-      )}`
-    }
+      )}`,
+    },
   },
   danger: {
     "&,&:hover": {
@@ -124,8 +131,8 @@ const navPillsStyle = (theme) => ({
       boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px ${hexToRGBAlpha(
         dangerColor,
         0.4
-      )}`
-    }
+      )}`,
+    },
   },
   rose: {
     "&,&:hover": {
@@ -134,12 +141,12 @@ const navPillsStyle = (theme) => ({
       boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px ${hexToRGBAlpha(
         roseColor,
         0.4
-      )}`
-    }
+      )}`,
+    },
   },
   alignCenter: {
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
   },
   tabWrapper: {
     color: "inherit",
@@ -149,9 +156,9 @@ const navPillsStyle = (theme) => ({
     fontWeight: "500",
     textTransform: "uppercase",
     "&,& *": {
-      letterSpacing: "normal"
-    }
-  }
+      letterSpacing: "normal",
+    },
+  },
 });
 
 export default navPillsStyle;

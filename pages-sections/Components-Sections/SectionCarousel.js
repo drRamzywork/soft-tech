@@ -22,59 +22,55 @@ export default function SectionCarousel() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false
+    autoplay: false,
   };
   return (
-    <div className={classes.section}>
-      <div className={classes.container}>
-        <GridContainer>
-          <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
-            <Card carousel>
-              <Carousel {...settings}>
-                <div>
-                  <img
-                    src="/img/bg.jpg"
-                    alt="First slide"
-                    className="slick-image"
-                  />
-                  <div className="slick-caption">
-                    <h4>
-                      <LocationOn className="slick-icons" />
-                      Yellowstone National Park, United States
-                    </h4>
-                  </div>
-                </div>
-                <div>
-                  <img
-                    src="/img/bg2.jpg"
-                    alt="Second slide"
-                    className="slick-image"
-                  />
-                  <div className="slick-caption">
-                    <h4>
-                      <LocationOn className="slick-icons" />
-                      Somewhere Beyond, United States
-                    </h4>
-                  </div>
-                </div>
-                <div>
-                  <img
-                    src="/img/bg3.jpg"
-                    alt="Third slide"
-                    className="slick-image"
-                  />
-                  <div className="slick-caption">
-                    <h4>
-                      <LocationOn className="slick-icons" />
-                      Yellowstone National Park, United States
-                    </h4>
-                  </div>
-                </div>
-              </Carousel>
-            </Card>
-          </GridItem>
-        </GridContainer>
-      </div>
-    </div>
+    <GridContainer>
+      <GridItem xs={12} sm={12} md={12} className={classes.marginAuto}>
+        <Card carousel>
+          <Carousel {...settings}>
+            <div>
+              <img
+                src="/img/bg.jpg"
+                alt="First slide"
+                className="slick-image"
+              />
+              <div className="slick-caption">
+                <h4>
+                  <LocationOn className="slick-icons" />
+                  Product Title
+                </h4>
+              </div>
+            </div>
+            <div>
+              <img
+                src="/img/bg2.jpg"
+                alt="Second slide"
+                className="slick-image"
+              />
+              <div className="slick-caption">
+                <h4>
+                  <LocationOn className="slick-icons" />
+                  Somewhere Beyond, United States
+                </h4>
+              </div>
+            </div>
+            <div>
+              <img
+                src="/img/bg3.jpg"
+                alt="Third slide"
+                className="slick-image"
+              />
+              <div className="slick-caption">
+                <h4>
+                  <LocationOn className="slick-icons" />
+                  Yellowstone National Park, United States
+                </h4>
+              </div>
+            </div>
+          </Carousel>
+        </Card>
+      </GridItem>
+    </GridContainer>
   );
 }
