@@ -31,6 +31,7 @@ export default function HeaderLinks(props) {
           noLiPadding
           navDropdown
           buttonText="Languages"
+          rtlActive={true}
           buttonProps={{
             className: classes.navLink,
             color: "transparent",
